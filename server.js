@@ -23,13 +23,13 @@ app.post('/messages',function (req, res) {
 	//send the POST data back as JSON
 	res.end(requestAsJson);
 
-    fs.appendFile('log.txt', requestAsJson + '\n', function (err) {
-    if (err) {
-        // append failed
-    } else {
-        // done
-    }
-    })
+  fs.appendFile('log.txt', requestAsJson + '\n', function (err) {
+  if (err) {
+      // append failed
+  } else {
+      // done
+  }
+  })
 
 });
 
